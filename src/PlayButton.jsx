@@ -1,10 +1,7 @@
 function PlayButton(props) {
-
   return (
-    <button>
-
-    </button>
-  )
+    <button />
+  );
 }
 
-export default PlayButton
+export default PlayButton;

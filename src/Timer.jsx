@@ -23,7 +23,6 @@ function Timer() {
           // How long animation takes to go from one percentage to another, in seconds
           pathTransitionDuration: 0.5,
 
-
           // Can specify path transition in more detail, or remove it entirely
           // pathTransition: 'none',
 
@@ -32,12 +31,13 @@ function Timer() {
           textColor: '#fff',
           trailColor: '#d6d6d6',
           backgroundColor: '#3e98c7',
-        })} />
+        })}
+      />
       <div>
         <PlayButton />
       </div>
     </div>
-  )
+  );
 }
 
-export default Timer
+export default Timer;
