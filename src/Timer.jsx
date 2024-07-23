@@ -1,10 +1,12 @@
 import { CircularProgressbar, buildStyles } from 'react-circular-progressbar';
+import PlayButton from './PlayButton';
 
-const percentage = 66;
+const percentage = 60;
 
 function Timer() {
   return (
-    <div style={{ width: 200, height: 200 }}>
+    <div>
+
       <CircularProgressbar
         value={percentage}
         text={`${percentage}%`}
@@ -13,7 +15,7 @@ function Timer() {
           rotation: 0.25,
 
           // Whether to use rounded or flat corners on the ends - can use 'butt' or 'round'
-          strokeLinecap: 'butt',
+          strokeLinecap: 'round',
 
           // Text size
           textSize: '16px',
@@ -21,15 +23,19 @@ function Timer() {
           // How long animation takes to go from one percentage to another, in seconds
           pathTransitionDuration: 0.5,
 
+
           // Can specify path transition in more detail, or remove it entirely
           // pathTransition: 'none',
 
           // Colors
           pathColor: `rgba(62, 152, 199, ${percentage / 100})`,
-          textColor: '#f88',
+          textColor: '#fff',
           trailColor: '#d6d6d6',
           backgroundColor: '#3e98c7',
         })} />
+      <div>
+        <PlayButton />
+      </div>
     </div>
   )
 }
