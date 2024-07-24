@@ -33,10 +33,10 @@ function Timer() {
           backgroundColor: '#3e98c7',
         })}
       />
-      <div>
+      <div style={{ marginTop: '20px' }}>
         <PlayButton />
       </div>
-    </div>
+    </div >
   );
 }
 
